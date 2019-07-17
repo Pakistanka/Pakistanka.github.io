@@ -1,0 +1,11 @@
+// variable overrides
+$grid-breakpoints: (
+        xs: 0,
+        sm: 320px,
+        md: 768px,
+        lg: 1024px,
+        xl: 1280px
+) !default;
+
+// Bootstrap and its default variables
+@import "node_modules/bootstrap/scss/bootstrap";

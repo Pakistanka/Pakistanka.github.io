@@ -1,0 +1,36 @@
+.greyDashboard {
+
+  background-color: $white2;
+
+  &__title {
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    color: $brownish-grey;
+    padding: 20px 10px 30px;
+  }
+  &__undertitle{
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.77;
+    letter-spacing: normal;
+    color: $orange-red;
+    padding-bottom: 10px;
+    margin-left: 10px;
+  }
+  &__text {
+    font-size: 11px;
+    font-weight: normal;
+    font-style: italic;
+    font-stretch: normal;
+    line-height: 1.45;
+    letter-spacing: normal;
+    color: $black;
+    padding: 0px 30px rem(50px) 10px;
+  }
+}

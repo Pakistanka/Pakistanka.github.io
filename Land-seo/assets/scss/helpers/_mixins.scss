@@ -1,0 +1,85 @@
+@mixin click-area($area) {
+  &:before {
+    position: absolute;
+    content: '';
+    top: -#{$area};
+    bottom: -#{$area};
+    right: -#{$area};
+    left: -#{$area};
+  }
+}
+
+@mixin tdn {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+// Framework grid generation
+//
+// Used only by Bootstrap to generate the correct number of grid classes given
+// any value of `$grid-columns`.
+
+@mixin raif-make-grid-columns($columns: $grid-columns, $gutter: $grid-gutter-width, $breakpoints: $grid-breakpoints) {
+  // Common properties for all breakpoints
+  %grid-column {
+    position: relative;
+    width: 100%;
+    min-height: 1px; // Prevent columns from collapsing when empty
+    padding-right: rem(($gutter / 2));
+    padding-left: rem(($gutter / 2));
+  }
+
+  @each $breakpoint in map-keys($breakpoints) {
+    $infix: breakpoint-infix($breakpoint, $breakpoints);
+
+    // Allow columns to stretch full width below their breakpoints
+    @for $i from 1 through $columns {
+      .raif-col#{$infix}-#{$i} {
+        @extend %grid-column;
+      }
+    }
+    .raif-col#{$infix},
+    .raif-col#{$infix}-auto {
+      @extend %grid-column;
+    }
+
+    @include media-breakpoint-up($breakpoint, $breakpoints) {
+      // Provide basic `.col-{bp}` classes for equal-width flexbox columns
+      .raif-col#{$infix} {
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width: 100%;
+      }
+      .raif-col#{$infix}-auto {
+        flex: 0 0 auto;
+        width: auto;
+        max-width: none; // Reset earlier grid tiers
+      }
+
+      @for $i from 1 through $columns {
+        .raif-col#{$infix}-#{$i} {
+          @include make-col($i, $columns);
+        }
+      }
+
+      .raif-order#{$infix}-first { order: -1; }
+
+      .raif-order#{$infix}-last { order: $columns + 1; }
+
+      @for $i from 0 through $columns {
+        .raif-order#{$infix}-#{$i} { order: $i; }
+      }
+
+      // `$columns - 1` because offsetting by the width of an entire row isn't possible
+      @for $i from 0 through ($columns - 1) {
+        @if not ($infix == "" and $i == 0) { // Avoid emitting useless .offset-0
+          .raif-offset#{$infix}-#{$i} {
+            @include make-col-offset($i, $columns);
+          }
+        }
+      }
+    }
+  }
+}

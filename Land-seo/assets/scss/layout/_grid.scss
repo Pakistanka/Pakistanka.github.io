@@ -1,0 +1,12 @@
+@include make-grid-columns(8);
+
+.content {
+  max-width: 100%;
+  // width: 960px;
+  margin: 0 auto;
+}
+
+.row {
+  margin-right: rem(-15px);
+  margin-left: rem(-15px);
+}

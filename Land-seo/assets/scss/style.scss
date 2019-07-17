@@ -1,0 +1,45 @@
+// Bootstrap
+@import "custom";
+@import "~bootstrap/scss/bootstrap";
+
+// Variables
+@import "helpers/vars";
+
+// Functions
+@import "helpers/functions";
+
+// Mixins
+@import "helpers/mixins";
+
+// Vendor
+@import "~select2/dist/css/select2";
+@import "slick-carousel/slick/slick.scss";
+@import "slick-carousel/slick/slick-theme.scss";
+
+// Fonts
+@import "base/fonts";
+
+//base
+@import "base/common";
+
+//Components
+@import "components/typography";
+@import "components/select";
+@import "components/sumoselect";
+@import "components/dashbord";
+@import "components/redDashboard";
+@import "components/figure";
+@import "components/greyDashboard";
+@import "components/skaterDashboard";
+@import "components/slider";
+
+//layout
+@import "layout/grid";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/margins";
+
+//pages
+@import "pages/section1";
+@import "pages/collegues";
+@import "pages/section2";
