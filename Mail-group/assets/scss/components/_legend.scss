@@ -1,0 +1,37 @@
+.legend {
+    background-color: $white;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    &-item{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        color: $black54;
+
+        font-family: $Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: rem(14px);
+        line-height: rem(24px);
+    }
+    &-circle{
+
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        margin: 20px 16px;
+
+        &__green{
+            background-color: $green;
+        }
+        &__orange {
+            background-color: $orange;
+        }
+        &__red {
+            background-color: $red;
+        }
+    }
+}

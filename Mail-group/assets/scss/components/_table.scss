@@ -1,0 +1,108 @@
+.table {
+
+    display: flex;
+
+    @media only screen and (max-width: 845px) {
+        flex-direction: column;
+      }
+    
+
+    &-item {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 50%;
+
+    }
+    &-row {
+        display: flex;
+        justify-content: space-between;
+        padding: 16px;
+        outline: 2px solid $grey-bg;
+
+        &:not(.nohover):hover{
+            box-shadow: 0px 8px 24px rgba(0, 48, 91, 0.12);
+            cursor: pointer;
+        }
+    }
+    &-block {
+        width: 50%;
+        display: flex;
+        align-items: center;
+
+        &__head {
+            font-family: $Montserrat;
+            font-style: normal;
+            font-weight: 600;
+            color: $black;
+
+            &-bg {
+                background-color: $grey-bg;
+                border-radius: rem(100px);
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+
+        &__score{
+            display: flex;
+            justify-content: space-around; 
+        }
+        
+    }
+    &-circle {
+        width: 24px;
+        height: 24px;
+        border-radius: 12px;
+        color: $white;
+
+        font-size: $baseFontSize;
+        font-weight: 500;
+        font-family: $Montserrat, $default;
+        text-align: center;
+
+        margin-right: 16px;
+
+        @media only screen and (max-width: 400px) {
+            width: 20px;
+            height: 20px;
+            border-radius: 10px;
+        }
+
+        &__green {
+            background-color: $green;
+        }
+        &__orange {
+            background-color: $orange;
+        }
+        &__red {
+            background-color: $red;
+        }
+    }
+    &-image {
+        width: 22px;
+        height: 22px;
+        margin: 0px 8px 0px 16px;
+
+    @media only screen and (max-width: 400px) {
+        margin: 0px;
+    }
+
+    }
+    &-icon {
+        display: flex;
+        align-items: center;
+    }
+    &-score {
+        font-style: normal;
+        font-weight: 500;
+        font-family: $Montserrat;
+        font-size: $baseFontSize;
+    }
+    &-name {
+
+        font-style: normal;
+        font-size: $baseFontSize;
+        font-weight: 500;
+        font-family: $Montserrat, $default;
+    }
+}

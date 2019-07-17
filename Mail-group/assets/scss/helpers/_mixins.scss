@@ -1,0 +1,34 @@
+@mixin click-area($area) {
+  &:before {
+    position: absolute;
+    content: '';
+    top: -#{$area};
+    bottom: -#{$area};
+    right: -#{$area};
+    left: -#{$area};
+  }
+}
+
+@mixin tdn {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+// Framework grid generation
+//
+// Used only by Bootstrap to generate the correct number of grid classes given
+// any value of `$grid-columns`.
+
+@mixin make-grid-columns($columns: $grid-columns, $gutter: $grid-gutter-width, $breakpoints: $grid-breakpoints) {
+  // Common properties for all breakpoints
+  %grid-column {
+    position: relative;
+    width: 100%;
+    min-height: 1px; // Prevent columns from collapsing when empty
+    // padding-right: rem(($gutter / 2));
+    // padding-left: rem(($gutter / 2));
+  }
+}
+
