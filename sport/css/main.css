@@ -1,0 +1,51 @@
+#navigation-sticky-wrapper {
+  height: 60px;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index: 200;
+}
+#myVideo {
+  height: 100vh;
+  width: 100vw;
+}
+.row-devices {
+
+}
+.row-title {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+.row-socialLinks {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.mdf-objects-content {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.mdf-title {
+  font-size: 10em;
+  color: royalblue;
+}
+.mdf-span {
+  color: white;
+  font-size: 3em;
+  line-height: 4em;
+  margin-top: 20px;
+}
+
+.awe-col {
+  padding: 0px;
+}
+.mdf-item-wrap {
+  background-color: black;
+}
