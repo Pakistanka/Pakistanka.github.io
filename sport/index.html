@@ -20,6 +20,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link type="text/css" rel="stylesheet" href="./css/css2.css" media="all">
+    <link type="text/css" rel="stylesheet" href="./css/gsap.css" media="all">
     <script type="text/javascript" async="" src="./js/ga.js"></script>
     <script type="text/javascript" id="www-widgetapi-script" src="./js/www-widgetapi.js" async=""></script>
     <script type="text/javascript" src="./js/jquery.min.js"></script>
@@ -40,9 +41,16 @@
     <script type="text/javascript" src="./js/jquery.touchwipe.js"></script>
     <script type="text/javascript" src="./js/jquery.queryloader2.js"></script>
     <script type="text/javascript" src="./js/fullscreen-loader.js"></script>
+    
+    <script type="text/javascript" src="./js/TweenMax.min.js"></script>
+    <script type="text/javascript" src="./js/true-and-real.js"></script>
+    <script type="text/javascript" src="./js/TweenlineMax.min.js"></script>
+  
+   
+
     <script src="https://use.fontawesome.com/ea09475283.js"></script>
     <script type="text/javascript">
-        <!--//--><![CDATA[//><!--
+        //--><![CDATA[//><!--
         (function($) {
             $(document).ready(function() {
                 var full_screen_1_options = {
@@ -111,7 +119,7 @@
     <script type="text/javascript" src="./js/mdf-fullscreen-slider.js"></script>
     <script type="text/javascript" src="./js/mdf-css3-transitions.js"></script>
     <script type="text/javascript">
-        <!--//--><![CDATA[//><!--
+        //--><![CDATA[//><!--
         jQuery.extend(Drupal.settings, {
             "basePath": "\/d7\/md-alpine\/",
             "pathPrefix": "",
@@ -2347,6 +2355,13 @@
     <a href="#" id="back-top" style="display: inline;"><i class="fontello fa fa-angle-up fa-2x" aria-hidden="true"></i></a>
     </div>
     </div>
+    <script>
+        TweenMax.set('body', {visibility: 'visible', delay: 1 });
+
+        var tl = new TimelineMax();
+        tl.to(".mdf-title", 3, {opacity:1, y: -50, scale: 1.2})
+        tl.to(".mdf-span", 1.5, {opacity:1, y: 20, scale:1.2})
+    </script>
 </body>
 
 </html>
