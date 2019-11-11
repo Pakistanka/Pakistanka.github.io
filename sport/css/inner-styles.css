@@ -7685,7 +7685,7 @@ textarea.input-group-sm>.form-control,textarea.input-group-sm>.input-group-addon
 .navbar-header:before,.navbar-header:after{content:" ";display:table;}
 .navbar-header:after{clear:both;}
 @media (min-width:768px){.navbar-header{float:left;}}
-.navbar-collapse{max-height:340px;overflow-x:visible;padding-right:15px;padding-left:15px;border-top:1px solid transparent;box-shadow:inset 0 1px 0 rgba(255, 255, 255, 0.1);-webkit-overflow-scrolling:touch;}.navbar-collapse:before,.navbar-collapse:after{content:" ";display:table;}
+.navbar-collapse{max-height:340px;overflow-x:visible;border-top:1px solid transparent;box-shadow:inset 0 1px 0 rgba(255, 255, 255, 0.1);-webkit-overflow-scrolling:touch;}.navbar-collapse:before,.navbar-collapse:after{content:" ";display:table;}
 .navbar-collapse:after{clear:both;}
 .navbar-collapse:before,.navbar-collapse:after{content:" ";display:table;}
 .navbar-collapse:after{clear:both;}
