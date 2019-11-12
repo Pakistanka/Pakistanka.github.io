@@ -9,18 +9,22 @@
     <meta name="Generator" content="">
     <link rel="canonical" href="">
     <link rel="shortlink" href="">
-    <link type="text/css" rel="stylesheet" href="./css/css.css">
     <link href="./css/css1.css" rel="stylesheet" type="text/css">
+    <link href="./css/fonts.css" rel="stylesheet" type="text/css">
     <link href="./css/main.css" rel="stylesheet" type="text/css">
     <link href="./css/inner-styles.css" rel="stylesheet" type="text/css">
     <link href="./css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="./css/slick.css" rel="stylesheet" type="text/css">
+    <link href="./css/slick-theme.css" rel="stylesheet" type="text/css">
     <link rel="shortcut icon" href="" type="image/vnd.microsoft.icon">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:300,400,500,700&display=swap&subset=latin-ext" rel="stylesheet">
 
     <title>Ивент Групп</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link type="text/css" rel="stylesheet" href="./css/css2.css" media="all">
     <link type="text/css" rel="stylesheet" href="./css/gsap.css" media="all">
+
     <script type="text/javascript" async="" src="./js/ga.js"></script>
     <script type="text/javascript" id="www-widgetapi-script" src="./js/www-widgetapi.js" async=""></script>
     <script type="text/javascript" src="./js/jquery.min.js"></script>
@@ -43,10 +47,15 @@
     <script type="text/javascript" src="./js/fullscreen-loader.js"></script>
     
     <script type="text/javascript" src="./js/TweenMax.min.js"></script>
-    <script type="text/javascript" src="./js/true-and-real.js"></script>
     <script type="text/javascript" src="./js/TweenlineMax.min.js"></script>
-  
-   
+    <script type="text/javascript" src="./js/TimelineMax.min.js"></script>
+
+    <script type="text/javascript" src="./js/true-and-real.js"></script>
+<!--    <script type="text/javascript" src="./js/glider.min.js"></script>-->
+    <script type="text/javascript" src="./js/glider.js"></script>
+    <script type="text/javascript" src="./js/slick.js"></script>
+
+
 
     <script src="https://use.fontawesome.com/ea09475283.js"></script>
     <script type="text/javascript">
@@ -118,344 +127,6 @@
     <script type="text/javascript" src="./js/flowtype.js"></script>
     <script type="text/javascript" src="./js/mdf-fullscreen-slider.js"></script>
     <script type="text/javascript" src="./js/mdf-css3-transitions.js"></script>
-    <script type="text/javascript">
-        //--><![CDATA[//><!--
-        jQuery.extend(Drupal.settings, {
-            "basePath": "\/d7\/md-alpine\/",
-            "pathPrefix": "",
-            "ajaxPageState": {
-                "theme": "md_alpine",
-                "theme_token": "UsFI_I9d9w_FcJD5v03_q2u2Pcf_CWwHdlTWmZmNKeE",
-                "js": {
-                    "sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.9\/jquery.min.js": 1,
-                    "misc\/jquery-extend-3.4.0.js": 1,
-                    "misc\/jquery.once.js": 1,
-                    "misc\/drupal.js": 1,
-                    "sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js": 1,
-                    "sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js": 1,
-                    "sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.tabs.min.js": 1,
-                    "sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.accordion.min.js": 1,
-                    "sites\/all\/modules\/custom\/awecontent\/js\/awecontent\/lib\/froogaloop.min.js": 1,
-                    "sites\/all\/modules\/custom\/awecontent\/js\/awecontent\/lib\/magnific\/magnific-popup.js": 1,
-                    "sites\/all\/modules\/custom\/awecontent\/js\/awecontent\/lib\/jquery.parallax-fontend.js": 1,
-                    "https:\/\/www.youtube.com\/iframe_api": 1,
-                    "https:\/\/maps.googleapis.com\/maps\/api\/js?v=3.exp": 1,
-                    "sites\/all\/modules\/custom\/awecontent\/js\/awecontent\/lib\/owl.carousel\/owl.carousel.js": 1,
-                    "sites\/all\/modules\/custom\/awecontent\/js\/awe-frontend-scripts.js": 1,
-                    "sites\/all\/modules\/custom\/md_fullscreen_slider\/js\/front\/jquery.touchwipe.js": 1,
-                    "sites\/all\/modules\/custom\/md_fullscreen_slider\/js\/front\/jquery.queryloader2.js": 1,
-                    "sites\/all\/modules\/custom\/md_fullscreen_slider\/js\/front\/fullscreen-loader.js": 1,
-                    "0": 1,
-                    "sites\/all\/modules\/contrib\/webform\/js\/webform.js": 1,
-                    "sites\/all\/modules\/custom\/md_ac_alpine\/js\/frontend-md-ac-alpine.js": 1,
-                    "sites\/all\/themes\/md_alpine\/js\/lib\/jquery.migrate-1.2.1.js": 1,
-                    "sites\/all\/themes\/md_alpine\/js\/lib\/jquery.browser.js": 1,
-                    "sites\/all\/themes\/md_alpine\/js\/lib\/modernizr.js": 1,
-                    "sites\/all\/themes\/md_alpine\/js\/lib\/okvideo.min.js": 1,
-                    "sites\/all\/themes\/md_alpine\/js\/lib\/jquery.sticky.js": 1,
-                    "sites\/all\/themes\/md_alpine\/js\/lib\/jquery.fitvids.js": 1,
-                    "sites\/all\/themes\/md_alpine\/js\/lib\/jquery.equal-height.min.js": 1,
-                    "sites\/all\/themes\/md_alpine\/js\/lib\/jquery.easing-1.3.pack.js": 1,
-                    "sites\/all\/themes\/md_alpine\/js\/lib\/bootstrap.min.js": 1,
-                    "sites\/all\/themes\/md_alpine\/js\/lib\/bootstrap-modal.js": 1,
-                    "sites\/all\/themes\/md_alpine\/js\/lib\/jquery.parallax-1.1.3.js": 1,
-                    "sites\/all\/themes\/md_alpine\/js\/lib\/jquery-countTo.js": 1,
-                    "sites\/all\/themes\/md_alpine\/js\/lib\/jquery.appear.js": 1,
-                    "sites\/all\/themes\/md_alpine\/js\/lib\/jquery.easy-pie-chart.js": 1,
-                    "sites\/all\/themes\/md_alpine\/js\/lib\/jquery.cycle.all.js": 1,
-                    "sites\/all\/themes\/md_alpine\/js\/lib\/jquery.maximage.js": 1,
-                    "sites\/all\/themes\/md_alpine\/js\/lib\/jquery.isotope.min.js": 1,
-                    "sites\/all\/themes\/md_alpine\/js\/lib\/skrollr.js": 1,
-                    "sites\/all\/themes\/md_alpine\/js\/lib\/jquery.flexslider-min.js": 1,
-                    "sites\/all\/themes\/md_alpine\/js\/lib\/jquery.hoverdir.js": 1,
-                    "sites\/all\/themes\/md_alpine\/js\/lib\/owl.carousel.min.js": 1,
-                    "sites\/all\/themes\/md_alpine\/js\/lib\/jquery.validate.min.js": 1,
-                    "sites\/all\/themes\/md_alpine\/js\/lib\/portfolio_custom.js": 1,
-                    "sites\/all\/themes\/md_alpine\/js\/script.js": 1,
-                    "sites\/all\/themes\/md_alpine\/js\/lib\/retina-1.1.0.min.js": 1,
-                    "sites\/all\/themes\/md_alpine\/js\/lib\/jquery.backstretch.min.js": 1,
-                    "sites\/all\/modules\/custom\/md_fullscreen_slider\/js\/front\/jquery.easing.js": 1,
-                    "sites\/all\/modules\/custom\/md_fullscreen_slider\/js\/front\/modernizr.custom.js": 1,
-                    "sites\/all\/modules\/custom\/md_fullscreen_slider\/js\/front\/flowtype.js": 1,
-                    "sites\/all\/modules\/custom\/md_fullscreen_slider\/js\/front\/mdf-fullscreen-slider.js": 1,
-                    "sites\/all\/modules\/custom\/md_fullscreen_slider\/js\/front\/mdf-css3-transitions.js": 1
-                },
-                "css": {
-                    "modules\/system\/system.base.css": 1,
-                    "modules\/system\/system.menus.css": 1,
-                    "modules\/system\/system.messages.css": 1,
-                    "modules\/system\/system.theme.css": 1,
-                    "misc\/ui\/jquery.ui.core.css": 1,
-                    "misc\/ui\/jquery.ui.theme.css": 1,
-                    "misc\/ui\/jquery.ui.tabs.css": 1,
-                    "misc\/ui\/jquery.ui.accordion.css": 1,
-                    "sites\/all\/modules\/custom\/comment\/comment.css": 1,
-                    "modules\/field\/theme\/field.css": 1,
-                    "modules\/node\/node.css": 1,
-                    "modules\/search\/search.css": 1,
-                    "modules\/user\/user.css": 1,
-                    "sites\/all\/modules\/contrib\/views\/css\/views.css": 1,
-                    "sites\/all\/modules\/contrib\/ctools\/css\/ctools.css": 1,
-                    "sites\/all\/modules\/custom\/awecontent\/css\/bootstrap.css": 1,
-                    "sites\/all\/modules\/custom\/awecontent\/css\/awecontent-layout.css": 1,
-                    "sites\/all\/modules\/custom\/awecontent\/css\/awe-animate.css": 1,
-                    "sites\/all\/modules\/custom\/awecontent\/css\/new-custom.css": 1,
-                    "sites\/all\/modules\/custom\/awecontent\/js\/awecontent\/lib\/magnific\/magnific-popup.css": 1,
-                    "sites\/all\/modules\/custom\/awecontent\/js\/awecontent\/lib\/owl.carousel\/owl.carousel.css": 1,
-                    "sites\/all\/modules\/custom\/awecontent\/js\/awecontent\/lib\/owl.carousel\/owl.theme.css": 1,
-                    "sites\/all\/modules\/custom\/awecontent\/js\/awecontent\/lib\/owl.carousel\/owl.transitions.css": 1,
-                    "sites\/all\/modules\/custom\/awecontent\/css\/objects\/accordion.css": 1,
-                    "sites\/all\/modules\/custom\/awecontent\/css\/objects\/image.css": 1,
-                    "sites\/all\/modules\/custom\/awecontent\/css\/objects\/gallery.css": 1,
-                    "sites\/all\/modules\/custom\/awecontent\/css\/objects\/slideshow.css": 1,
-                    "sites\/all\/modules\/custom\/awecontent\/css\/objects\/button.css": 1,
-                    "sites\/all\/modules\/custom\/awecontent\/css\/objects\/divider.css": 1,
-                    "sites\/all\/modules\/custom\/awecontent\/css\/objects\/flickr.css": 1,
-                    "sites\/all\/modules\/custom\/awecontent\/css\/ac-icon.css": 1,
-                    "sites\/all\/modules\/custom\/awecontent\/css\/objects\/icon.css": 1,
-                    "sites\/all\/modules\/custom\/awecontent\/css\/objects\/table.css": 1,
-                    "sites\/all\/modules\/custom\/awecontent\/css\/objects\/tabs.css": 1,
-                    "sites\/all\/modules\/custom\/md_fullscreen_slider\/js\/front\/css\/mdf-fullscreen-slider.css": 1,
-                    "sites\/all\/themes\/md_alpine\/css\/mdf-fullscreenslider-style.css": 1,
-                    "sites\/all\/modules\/custom\/md_fullscreen_slider\/js\/front\/css\/fullscreen-animate.css": 1,
-                    "sites\/all\/modules\/custom\/md_fullscreen_slider\/js\/front\/css\/fullscreen-animations.css": 1,
-                    "sites\/all\/modules\/custom\/md_fullscreen_slider\/js\/front\/css\/component.css": 1,
-                    "sites\/all\/modules\/custom\/md_fullscreen_slider\/js\/front\/css\/jqvideobox.css": 1,
-                    "0": 1,
-                    "1": 1,
-                    "2": 1,
-                    "sites\/all\/modules\/custom\/md_ac_alpine\/css\/awecontent-about-item.css": 1,
-                    "sites\/all\/modules\/custom\/md_ac_alpine\/css\/awecontent-chart-item.css": 1,
-                    "sites\/all\/modules\/custom\/md_ac_alpine\/css\/awecontent-feature-item.css": 1,
-                    "sites\/all\/modules\/custom\/md_ac_alpine\/css\/awecontent-service-item.css": 1,
-                    "sites\/all\/modules\/custom\/md_ac_alpine\/css\/awecontent-socialicon-item.css": 1,
-                    "sites\/all\/modules\/custom\/md_ac_alpine\/css\/awecontent-team-item.css": 1,
-                    "sites\/all\/modules\/custom\/md_ac_alpine\/css\/awecontent-funfact-item.css": 1,
-                    "sites\/all\/modules\/custom\/md_ac_alpine\/css\/awecontent-testimonial-item.css": 1,
-                    "sites\/all\/modules\/custom\/md_ac_alpine\/css\/awecontent-pricing-item.css": 1,
-                    "sites\/all\/modules\/custom\/md_ac_alpine\/css\/awecontent-aheader-item.css": 1,
-                    "sites\/all\/modules\/contrib\/webform_layout\/layout_box.css": 1,
-                    "sites\/all\/modules\/contrib\/webform\/css\/webform.css": 1,
-                    "sites\/all\/modules\/contrib\/fontello\/css\/fontello.fix.css": 1,
-                    "public:\/\/icon\/fontello\/fontello\/css\/fontello.css": 1,
-                    "public:\/\/icon\/fontello\/fontello\/css\/animation.css": 1,
-                    "public:\/\/icon\/fontello\/fontello\/css\/fontello-ie7.css": 1,
-                    "sites\/all\/themes\/md_alpine\/css\/loader.css": 1,
-                    "sites\/all\/themes\/md_alpine\/css\/normalize.css": 1,
-                    "sites\/all\/themes\/md_alpine\/css\/bootstrap.min.css": 1,
-                    "sites\/all\/themes\/md_alpine\/css\/font-awesome.min.css": 1,
-                    "sites\/all\/themes\/md_alpine\/css\/flexslider.css": 1,
-                    "sites\/all\/themes\/md_alpine\/css\/owl.carousel.css": 1,
-                    "sites\/all\/themes\/md_alpine\/css\/own.theme.css": 1,
-                    "sites\/all\/themes\/md_alpine\/css\/fontello.css": 1,
-                    "sites\/all\/themes\/md_alpine\/css\/style.css": 1,
-                    "sites\/all\/themes\/md_alpine\/css\/style-responsive.css": 1,
-                    "sites\/all\/themes\/md_alpine\/css\/isotope.css": 1,
-                    "sites\/all\/themes\/md_alpine\/css\/colors\/blu.css": 1,
-                    "http:\/\/fonts.googleapis.com\/css?family=Raleway:400,300,200,100,500,600,700,800,900": 1,
-                    "3": 1,
-                    "4": 1,
-                    "5": 1,
-                    "6": 1,
-                    "7": 1,
-                    "8": 1,
-                    "9": 1,
-                    "10": 1,
-                    "11": 1,
-                    "12": 1,
-                    "13": 1,
-                    "14": 1,
-                    "15": 1,
-                    "16": 1,
-                    "17": 1,
-                    "18": 1,
-                    "19": 1,
-                    "20": 1,
-                    "21": 1,
-                    "22": 1,
-                    "23": 1,
-                    "24": 1,
-                    "25": 1,
-                    "26": 1,
-                    "27": 1,
-                    "28": 1,
-                    "29": 1,
-                    "30": 1,
-                    "31": 1,
-                    "32": 1,
-                    "33": 1,
-                    "34": 1,
-                    "35": 1,
-                    "36": 1,
-                    "37": 1,
-                    "38": 1,
-                    "39": 1,
-                    "40": 1,
-                    "41": 1,
-                    "42": 1,
-                    "43": 1,
-                    "44": 1,
-                    "45": 1,
-                    "46": 1,
-                    "47": 1,
-                    "48": 1,
-                    "49": 1,
-                    "50": 1,
-                    "51": 1,
-                    "52": 1,
-                    "53": 1,
-                    "54": 1,
-                    "55": 1,
-                    "56": 1,
-                    "57": 1,
-                    "58": 1,
-                    "59": 1,
-                    "60": 1,
-                    "61": 1,
-                    "62": 1,
-                    "63": 1,
-                    "64": 1,
-                    "65": 1,
-                    "66": 1,
-                    "67": 1,
-                    "68": 1,
-                    "69": 1,
-                    "70": 1,
-                    "71": 1,
-                    "72": 1,
-                    "73": 1,
-                    "74": 1,
-                    "75": 1,
-                    "76": 1,
-                    "77": 1,
-                    "78": 1,
-                    "79": 1,
-                    "80": 1,
-                    "81": 1,
-                    "82": 1,
-                    "83": 1,
-                    "84": 1,
-                    "85": 1,
-                    "86": 1,
-                    "87": 1,
-                    "88": 1,
-                    "89": 1,
-                    "90": 1,
-                    "91": 1,
-                    "92": 1,
-                    "93": 1,
-                    "94": 1,
-                    "95": 1,
-                    "96": 1,
-                    "97": 1,
-                    "98": 1,
-                    "99": 1,
-                    "100": 1,
-                    "101": 1,
-                    "102": 1,
-                    "103": 1,
-                    "104": 1,
-                    "105": 1,
-                    "106": 1,
-                    "107": 1,
-                    "108": 1,
-                    "109": 1,
-                    "110": 1,
-                    "111": 1,
-                    "112": 1,
-                    "113": 1,
-                    "114": 1,
-                    "115": 1,
-                    "116": 1,
-                    "117": 1,
-                    "118": 1,
-                    "119": 1,
-                    "120": 1,
-                    "121": 1,
-                    "122": 1,
-                    "123": 1,
-                    "124": 1,
-                    "125": 1,
-                    "126": 1,
-                    "127": 1,
-                    "128": 1,
-                    "129": 1,
-                    "130": 1,
-                    "131": 1,
-                    "132": 1,
-                    "133": 1,
-                    "134": 1,
-                    "135": 1,
-                    "136": 1,
-                    "137": 1,
-                    "138": 1,
-                    "139": 1,
-                    "140": 1,
-                    "141": 1,
-                    "142": 1,
-                    "143": 1,
-                    "144": 1,
-                    "145": 1,
-                    "146": 1,
-                    "147": 1,
-                    "148": 1,
-                    "149": 1,
-                    "150": 1,
-                    "151": 1,
-                    "152": 1,
-                    "153": 1,
-                    "154": 1,
-                    "155": 1,
-                    "156": 1,
-                    "157": 1,
-                    "158": 1,
-                    "159": 1,
-                    "160": 1,
-                    "161": 1,
-                    "162": 1,
-                    "163": 1,
-                    "164": 1,
-                    "165": 1,
-                    "166": 1,
-                    "167": 1,
-                    "168": 1,
-                    "169": 1,
-                    "170": 1,
-                    "171": 1,
-                    "172": 1,
-                    "173": 1,
-                    "174": 1,
-                    "175": 1,
-                    "176": 1,
-                    "177": 1,
-                    "178": 1,
-                    "sites\/all\/themes\/md_alpine\/css\/ie7.css": 1
-                }
-            },
-            "alpineSettings": {
-                "path": "sites\/all\/modules\/custom\/md_ac_alpine"
-            },
-            "flick": {
-                "flick_setting_id": "113963751@N02",
-                "flick_setting_numberphoto": 6
-            },
-            "urlIsAjaxTrusted": {
-                "\/d7\/md-alpine\/": true
-            },
-            "themePath": "sites\/all\/themes\/md_alpine",
-            "enaPreloader": 1,
-            "menuStickyEnable": 1,
-            "hdBgType": "video",
-            "hdSlideEffect": "linear",
-            "hdPtAutoPlay": false,
-            "mapMarkerTitle": "Megadrupal",
-            "mapMarkerDes": "Ha Noi , Viet Nam",
-            "mapLatlng": "40.748395,-73.985542",
-            "mapTypes": "ROADMAP",
-            "mapZoom": 16
-        });
-        //--><!]]>
-    </script>
     <script src="./js/iframe_api1.js" id="YTAPI"></script>
     <script type="text/javascript" charset="UTF-8" src="./js/common.js"></script>
     <script type="text/javascript" charset="UTF-8" src="./js/util.js"></script>
@@ -465,7 +136,6 @@
     <script type="text/javascript" charset="UTF-8" src="./js/controls.js"></script>
     <script type="text/javascript" charset="UTF-8" src="./js/onion.js"></script>
     <script type="text/javascript" charset="UTF-8" src="./js/stats.js"></script>
-    <script src="chrome-extension://kfhkikpdmehlpkaiplafjkaicdljldcf/injectedscript-automation.js" type="text/javascript"></script>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="75" class="html front not-logged-in no-sidebars page-node page-node- page-node-45 page-type-page awecontent-layout" cz-shortcut-listen="true">
@@ -478,20 +148,22 @@
     <div id="top" class="mdf-fullscreen-1-wrap" style="height: 100vh;">
         <div class="mdf-slide-wrap">
             <div class="mdf-item-wrap">
-                <video autoplay muted loop id="myVideo">
-                    <source src="video.mp4" type="video/mp4">
-                    <source type="video/webm" src="media/video.webm">
-                    <source type="video/ogg" src="media/video.ogg">
-                    <source type="video/mp4" src="media/video.mp4">
-                </video>
+                <img src="media/videoplayback-cut.gif" alt="" class="img-back">
+<!--                <video autoplay muted loop id="myVideo" poster="media/videoplayback-cut.gif">-->
+<!--                    <source src="media/videoplayback-cut.mp4" type="video/mp4">-->
+<!--                    <source type="video/webm" src="media/videoplayback-cut.webm">-->
+<!--                    <source type="video/mp4" src="media/videoplayback-cut.mp4">-->
+<!--                </video>-->
                 <div class="mdf-objects">
                     <div class="mdf-objects-content" style="">
-                        <h1 class="mdf-title">
-                            Ивент Групп
-                        </h1>
-                        <h2 class="mdf-span">
-                            Сопровождение спортивных событий c 2002 года
-                        </h2>
+                        <div class="wrapper">
+                            <h1 class="mdf-title">
+                                Ивент Групп
+                            </h1>
+                            <h2 class="mdf-span">
+                                Сопровождение спортивных событий c 2002 года
+                            </h2>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -565,7 +237,7 @@
                                                             <div class="awe-item awe-image awe-section-45-1-2-0-image item_right  caption-hover ant-flyin proty-dir-distant-right" data-animation="{&quot;type&quot;:&quot;flyin&quot;,&quot;duration&quot;:&quot;1300&quot;,&quot;delay&quot;:&quot;0&quot;,&quot;advance&quot;:&quot;right&quot;}"
                                                                 style="animation-duration: 1300ms; animation-delay: 0ms; opacity: 1; right: 0px;">
                                                                 <div class="awe-image-content">
-                                                                    <div class="awe-image-container">
+                                                                    <div class="awe-image-container glider">
                                                                         <img src="./img/uefa-euro.jpg" alt="european championship">
                                                                         <img src="./img/khl.png" alt="КХЛ">
                                                                         <img src="./img/mhl.png" alt="МХЛ">
@@ -829,7 +501,7 @@
                                                     <div class="awe-col-content text-center">
                                                         <div class="awe-col-wrapper">
                                                             <h1 class="awe-item awe-header awe-section-45-13-0-0-header " data-animation="{&quot;type&quot;:&quot;expandin&quot;,&quot;duration&quot;:&quot;1200&quot;,&quot;delay&quot;:&quot;0&quot;}">
-                                                                 Мы работаем по закону в соответствии с правовыми нормами Российской Федерации<br></h1>
+                                                                 Мы работаем в соответствии с правовыми нормами Российской Федерации<br></h1>
                                                             <!-- <div class="awe-item awe-text awe-section-45-13-0-1-text ">
                                                                 Please the customer</div> -->
                                                         </div>
@@ -1045,13 +717,13 @@
                                                                     <div class="section-title text-center">
                                                                         <div class="item_left">
                                                                             <span class="line big"></span>
-                                                                            <span class="title" style="color: ;font-size:-1px;line-height: -1px;letter-spacing: -1px;font-weight:;font-style:;">Мы гордимся работать с ними</span>
+                                                                            <span class="title" style="color: ;font-size:-1px;line-height: -1px;letter-spacing: -1px;font-weight:;font-style:;">Гордимся участием</span>
                                                                             <span class="line big"></span>
                                                                         </div>
                                                                         <h1 class="item_left aheader-number" style="color:;font-size: -1px;line-height: -1px;letter-spacing: -1px;font-weight:;font-style:;">События</h1>
                                                                         <div class="item_left">
                                                                             <span class="line"></span>
-                                                                            <span class="title" style="color: ;font-size:-1px;line-height: -1px;letter-spacing: -1px;font-weight:;font-style:;">Они горды нашим сотрудничеством</span>
+                                                                            <span class="title" style="color: ;font-size:-1px;line-height: -1px;letter-spacing: -1px;font-weight:;font-style:;">Ценим доверие</span>
                                                                             <span class="line"></span>
                                                                         </div>
                                                                     </div>
@@ -1491,7 +1163,7 @@
                                                 <div class="awe-col awecontent-column awe-section-45-16-2  col-lg-12 col-md-12 col-sm-12 col-xs-12 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-0 col-lg-make-row-true col-md-make-row-true col-sm-make-row-true col-xs-make-row-true ">
                                                     <div class="awe-col-content text-center">
                                                         <div class="awe-col-wrapper">
-                                                            <div class="awe-gmap awe-item awe-section-45-16-2-0-gmap " data-zoom="15" data-style="style1" data-latlong="21.001763, 105.820591" data-scrollzoom="1" data-info="1" data-marker="http://demo.megadrupal.com/d7/md-alpine/sites/default/files/marker.png" data-title="Megadrupal"
+                                                            <div class="awe-gmap awe-item awe-section-45-16-2-0-gmap " data-zoom="15" data-style="style1" data-latlong="21.001763, 105.820591" data-scrollzoom="1" data-info="1" data-marker="img/marker.png" data-title="Megadrupal"
                                                                 data-descriptions="Ha Noi , Viet Nam, Asia" style="position: relative; overflow: hidden;">
                                                                 <div style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);">
                                                                     <div class="gm-style" style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px;">
@@ -1582,7 +1254,7 @@
                                                                                             <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -768px; top: -256px;"></div>
                                                                                         </div>
                                                                                     </div>
-                                                                                    <div style="width: 63px; height: 68px; overflow: hidden; position: absolute; left: -32px; top: -68px; z-index: 0;"><img alt="" src="./img/marker.png" draggable="false" style="position: absolute; left: 0px; top: 0px; user-select: none; width: 63px; height: 68px; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                                                                    <div style="width: 63px; height: 68px; overflow: hidden; position: absolute; left: -32px; top: -68px; z-index: 0;"><img alt="" src="img/marker.png" draggable="false" style="position: absolute; left: 0px; top: 0px; user-select: none; width: 63px; height: 68px; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
                                                                                 </div>
                                                                                 <div style="position: absolute; left: 0px; top: 0px; z-index: 0;">
                                                                                     <div style="position: absolute; z-index: 985; transform: matrix(1, 0, 0, 1, -6, -18);">
@@ -1633,7 +1305,7 @@
                                                 <div style="position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;"></div>
                                                 <div style="position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;">
                                                     <div title="Click to show info" style="width: 63px; height: 68px; overflow: hidden; position: absolute; opacity: 0; cursor: pointer; touch-action: none; left: -32px; top: -68px; z-index: 0;">
-                                                        <img alt="" src="./img/marker.png" draggable="false" style="position: absolute; left: 0px; top: 0px; user-select: none; width: 63px; height: 68px; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                                        <img alt="" src="img/marker.png" draggable="false" style="position: absolute; left: 0px; top: 0px; user-select: none; width: 63px; height: 68px; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
                                                 </div>
                                                 <div style="position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;"></div>
                                             </div>
@@ -1739,7 +1411,7 @@
                                                                         <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
 
                                                                             <div>
-                                                                                <form class="webform-client-form webform-client-form-29 element-inline" action="http://demo.megadrupal.com/d7/md-alpine/" method="post" id="webform-client-form-29" accept-charset="UTF-8">
+                                                                                <form class="webform-client-form webform-client-form-29 element-inline" action="#" method="post" id="webform-client-form-29" accept-charset="UTF-8">
                                                                                     <div>
                                                                                         <div class="row">
                                                                                             <div id="webform-component-column-left" class="webform-layout-box vert col-md-6 col-sm-6 col-md-6 col-xs-12 ">

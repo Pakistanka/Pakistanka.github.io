@@ -10,9 +10,6 @@
   height: 100vh;
   width: 100vw;
 }
-.row-devices {
-
-}
 .row-title {
   position: absolute;
   top: 50%;
@@ -33,18 +30,39 @@
   justify-content: center;
   flex-direction: column;
 }
+
 .mdf-title {
-  font-size: 10em;
+  font-size: 8em;
   color: white;
   font-weight: bold;
+  display: flex;
+  align-items: flex-start;
+  text-align: center;
+  margin-top: 50px;
+
 }
 .mdf-span {
   color: white;
   font-size: 3em;
-  line-height: 4em;
-  margin-top: 20px;
+  text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+  .mdf-title {
+    font-size: 6.5em;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: flex-start;
+    text-align: center;
+  }
+  .mdf-span {
+    color: white;
+    font-size: 3em;
+    margin: 20px 25% 0px;
+    text-align: center;
+  }
+}
 .awe-col {
   padding: 0px;
 }
@@ -71,4 +89,27 @@
 }
 #block-md-alpine-module-footer {
   margin-top: 15px;
+}
+
+@media screen and (min-width: 767px) {
+  .navbar-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+
+.wrapper {
+  width: 85%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-back {
+  height: 100vh;
+  width: 100vw;
 }
