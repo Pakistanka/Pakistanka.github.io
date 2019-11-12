@@ -6,6 +6,7 @@ jQuery(document).ready(function($){
     slidesToShow: 4,
     slidesToScroll: 4,
     arrows: true,
+    mobileFirst: true,
     responsive: [
       {
         breakpoint: 1024,
