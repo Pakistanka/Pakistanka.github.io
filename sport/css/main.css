@@ -105,10 +105,6 @@
   justify-content: center;
 }
 
-.img-back {
-  height: 100vh;
-  width: 100vw;
-}
 #background {
   width: 100vw;
   height: 100vh;
@@ -116,11 +112,11 @@
   display: block;
 }
 
-#myVideo {
-  height: 100vh;
-  width: 100vw;
-  /*display: block;*/
-}
+/*#myVideo {*/
+/*  height: 100vh;*/
+/*  width: 100vw;*/
+/*  !*display: block;*!*/
+/*}*/
 
 /*@media screen and (max-width: 767px) {*/
 /*  #myVideo {*/
