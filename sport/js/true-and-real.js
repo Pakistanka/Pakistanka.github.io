@@ -37,7 +37,7 @@ jQuery(document).ready(function($){
   });
 });
 
-var viewMode = getCookie("view-mode");
+var viewMode = getCookie("view-model");
 if(viewMode == "desktop"){
   viewport.setAttribute('content', 'width=1024');
 }else if (viewMode == "mobile"){
