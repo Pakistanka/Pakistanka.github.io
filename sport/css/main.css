@@ -112,24 +112,25 @@
 #background {
   width: 100vw;
   height: 100vh;
-  display: none;
+  /*display: none;*/
+  display: block;
 }
 
 #myVideo {
   height: 100vh;
   width: 100vw;
-  display: block;
+  /*display: block;*/
 }
 
-@media screen and (max-width: 767px) {
-  #myVideo {
-    height: 100vh;
-    width: 100vw;
-    display: none;
-  }
-  #background {
-    width: 100vw;
-    height: 100vh;
-    display: block;
-  }
-}
+/*@media screen and (max-width: 767px) {*/
+/*  #myVideo {*/
+/*    height: 100vh;*/
+/*    width: 100vw;*/
+/*    display: none;*/
+/*  }*/
+/*  #background {*/
+/*    width: 100vw;*/
+/*    height: 100vh;*/
+/*    display: block;*/
+/*  }*/
+/*}*/
