@@ -1,0 +1,72 @@
+.sg-caption {
+    line-height: 1;
+}
+
+.white_large {
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 48px;
+    letter-spacing: -0.05em;
+    color: #fff;
+    white-space: nowrap;
+}
+
+.btn_yellow {
+    font-family: 'Raleway';
+    color: #fff;
+    background: #e2b448;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 20px 25px;
+}
+
+.btn_outline {
+    font-family: 'Poppins';
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 060px;
+    font-weight: 600;
+    letter-spacing: 0.075em;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 16px 24px;
+    font-size: 14px;
+}
+
+.btn_teal {
+    font-family: 'Raleway';
+    color: #fff;
+    background: #24a0b8;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 20px 25px;
+}
+
+.dark_grey_medium {
+    font-family: 'Raleway';
+    font-size: 48px;
+    font-weight: 300;
+    color: #555;
+    white-space: nowrap;
+}
+
+.dark_grey_small {
+    font-family: 'Raleway';
+    font-size: 24px;
+    font-weight: 300;
+    color: #555;
+    max-width: 500px;
+    line-height: 1.5;
+    white-space: normal;
+}
+
+.grey_small {
+    font-family: 'Poppins';
+    font-size: 20px;
+    color: #ccc;
+    white-space: nowrap;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+}

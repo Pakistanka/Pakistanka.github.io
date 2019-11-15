@@ -1,0 +1,108 @@
+#h1 {
+    text-align: center;
+    width: 100%;
+     top: 40%; 
+     animation-delay: 1000ms; 
+     animation-duration: 400ms;
+}
+#h2 {
+    text-align: center;
+    width: 100%;
+    top: 50%; 
+    animation-delay: 1500ms; 
+    animation-duration: 400ms;
+}
+.dawn-weight {
+    font-size: 2.5em;
+}
+.dawn-testimonials {
+    height: 200px;
+}
+.h3, h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.line-height {
+    line-height: 10px;
+    visibility: hidden;
+}
+.title-purple {
+    background-color: #6d64c6;
+    border-color: #6d64c6;
+    color: white;
+    height: 40px;
+    width: 200px;
+    border-radius: 20px 0px 20px 0px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title-h2 {
+    display: flex;
+    position: relative;
+    font-family: 'Poppins';
+    padding-bottom: 2rem;
+    letter-spacing: -0.1rem;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+}
+.title-h2:after {
+    display: flex;
+    content: '';
+    width: 100px;
+    height: 2px;
+    margin-top: 2rem;
+
+    background: #6d64c6;
+    background: -webkit-linear-gradient(to top,#667eea,#764ba2);
+    background-image: linear-gradient(135deg,#667eea 0%,#764ba2 100%);
+}
+.saga-text-block {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.sg-slide img {
+    height: 99vh;
+}
+
+.align-of-items {
+    display: flex;
+}
+
+.interview-align {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+@media all and (max-width: 768px) {
+    .grey_small {
+        font-family: 'Poppins';
+        font-size: 20px;
+        color: #ccc;
+        white-space: unset;
+        text-transform: uppercase;
+        letter-spacing: 0.025em;
+    } 
+    
+    .white_large {
+        font-size: 2.5em;
+    }
+    #h1 {
+        top: 30%;
+    }
+    #h2 {
+        top: 40%;
+    }
+}
+
