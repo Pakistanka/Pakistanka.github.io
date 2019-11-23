@@ -10994,22 +10994,22 @@ body.front #ajaxpage {
 	top: 50%;
 	width: 11px;
 }
-#timeline .timeline-item:nth-child(2n) {
+/* #timeline .timeline-item:nth-child(2n) {
 	float: right;
-}
-#timeline .timeline-item:nth-child(2n) .post {
+} */
+/* #timeline .timeline-item:nth-child(2n) .post {
 	margin-left: 90px;
 	margin-right: 0;
-}
-#timeline .timeline-item:nth-child(2n) .post-info {
+} */
+/* #timeline .timeline-item:nth-child(2n) .post-info {
 	left: auto;
 	right: 100%;
-}
-#timeline .timeline-item:nth-child(2n) .post-arrow {
+} */
+/* #timeline .timeline-item:nth-child(2n) .post-arrow {
 	background-image: url("../img/timeline-arrow-left.png");
 	left: auto;
 	right: 100%;
-}
+} */
 .action {
 	margin-top: 50px;
 }
@@ -12005,7 +12005,7 @@ li.expanded, li.collapsed, li.leaf {
 	
 	#timeline .timeline-item .post, 
 	#timeline .timeline-item:nth-child(2n) .post {
-		margin: 140px 0 25px 0;
+		margin: 0px 0 25px 0;
 	}
 	#timeline .timeline-item .post-info, 
 	#timeline .timeline-item:nth-child(2n) .post-info {
@@ -12021,15 +12021,6 @@ li.expanded, li.collapsed, li.leaf {
 		display: none;
 	}
 }
-/*
-Theme Name: Alpine
-Theme URI: http://www.creative-ispiration.com/themes/alpine/
-Description: Responsive One Page HTML5/CSS3 Parallax Site Template
-Version: 1.0
-Author: Creative-Ispiration
-Author URI: http://themeforest.net/user/creativeispiration
-*/
-
 
 /* ExtraSmall devices (tablets, 767px and down) */
 @media (max-width: 767px) {
@@ -12159,9 +12150,9 @@ Author URI: http://themeforest.net/user/creativeispiration
 		margin-bottom: 0;
 		width: 100%;
 	}
-	.timeline-content #timeline .timeline-item .post, .timeline-content #timeline .timeline-item:nth-child(2n) .post {
+	/* .timeline-content #timeline .timeline-item .post, .timeline-content #timeline .timeline-item:nth-child(2n) .post {
 		margin: 140px 0 25px 0;
-	}
+	} */
 	.timeline-content #timeline .timeline-item .post-info, .timeline-content #timeline .timeline-item:nth-child(2n) .post-info {
 		left: 0;
 		right: 0;
@@ -12371,7 +12362,7 @@ Author URI: http://themeforest.net/user/creativeispiration
 }
 @media (max-width: 767px) {
     .timeline-content #timeline .timeline-item .post, .timeline-content #timeline .timeline-item:nth-child(2n) .post {
-        margin: 300px 0 25px;
+        margin: 0px 0 25px;
     }
     .timeline-content #timeline .timeline-item .post-info, .timeline-content #timeline .timeline-item:nth-child(2n) .post-info {
         background: none repeat scroll 0 0 #f3f3f3;
