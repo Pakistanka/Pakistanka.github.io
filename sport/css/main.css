@@ -59,12 +59,20 @@
     margin: 20px 25% 0px;
     text-align: center;
   }
+  .item-about {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .awe-col {
   padding: 0px;
 }
 .mdf-item-wrap {
   background-color: black;
+  background-image: url('../img/back.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;s
 }
 .awe-image-container {
   display: flex;
@@ -130,3 +138,19 @@
 /*    display: block;*/
 /*  }*/
 /*}*/
+
+
+
+#footer {
+  background: #111111;
+}
+
+#timeline {
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+#timeline .timeline-item {
+  margin: 20px auto;
+}
