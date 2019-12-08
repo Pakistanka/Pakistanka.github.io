@@ -525,6 +525,11 @@ option {
   background: -ms-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* IE10+ */
   background: linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%); /* W3C */
 }
+.dawn-container .navbar.navbar-fixed-top {
+  max-height: 60px;
+  height: auto;
+}
+
 
 #btnContactUs {
   border: inherit;
