@@ -193,7 +193,6 @@
   .accordion {
     background: #fff;
     width: 80vw;
-    border: 1px solid #e0e0e0;
     padding-left: 10px;
   }
 }
@@ -245,7 +244,6 @@ ul li {
 .accordion {
   background: #fff;
   width: 50vw;
-  /* border: 1px solid #e0e0e0; */
   padding-left: 10px;
 }
 
@@ -319,7 +317,7 @@ input[type=checkbox]:checked ~ .accordion-label:before {
 }
 input[type=checkbox]:checked ~ .accordion-child {
   border: 1px solid #e0e0e0;
-  margin: 0 -20px 15px -20px;
+  margin: 0 -10px 15px -20px;
   background: #fff;
   box-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.16);
   padding: 30px;
@@ -335,23 +333,14 @@ input[type=checkbox]:checked ~ .accordion-child {
   display: flex;
   justify-content: center;
   margin: 20px auto;
+  width: 100vw;
 }
+
 .field--name-title {
   text-transform: uppercase;
 }
 #brand.navbar-brand {
   padding-top: 6px;
-}
-@media screen and (max-width: 767px) {
-  .accordion {
-    background: #fff;
-    width: 90vw;
-    border: 1px solid #e0e0e0;
-    padding-left: 10px;
-  }
-  .career__form .col-md-6{
-    margin: 0px 10px;
-  }
 }
 
 #career__header .region-content-top{
@@ -540,4 +529,26 @@ option {
 #btnContactUs {
   border: inherit;
   outline: none;
+}
+
+@media screen and (max-width: 767px) {
+  .accordion {
+    background: #fff;
+    width: 90vw;
+    padding-left: 10px;
+  }
+  .career__form .career__wrap {
+    width: 100vw;
+    padding-right: 0px;
+    margin-right: 0px;
+    margin-left: 1em;
+  }
+  .social_wrap {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #textinput {
+    font-weight: 400;
+    width: 96vw;
+    outline: none;
 }

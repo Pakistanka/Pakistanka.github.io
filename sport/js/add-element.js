@@ -10,6 +10,7 @@ jQuery(document).ready(function($){
     });
     $(".social_wrap").on("click", ".delete", function(e) {
       $(".next-referral").last().remove();
+      $(".delete").hide();
     });
   });
 
