@@ -530,7 +530,6 @@ option {
   height: auto;
 }
 
-
 #btnContactUs {
   border: inherit;
   outline: none;
@@ -556,4 +555,13 @@ option {
     font-weight: 400;
     width: 96vw;
     outline: none;
+  }
+
+}
+.dawn-container .navbar-right {
+  float: right !important;
+  margin-right: 0px;
+}
+.dawn-container {
+  overflow: hidden;
 }
