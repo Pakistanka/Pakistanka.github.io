@@ -1,0 +1,70 @@
+.filterSlider {
+    .ui-widget.ui-widget-content {
+        border-radius: 0;
+        border: 0;
+        height: 2px;
+        background-color: $desc-blue30;
+    }
+    .ui-widget-header {
+        background-color: $desc-blue;
+    }
+    .ui-slider-horizontal .ui-slider-handle {
+        border: 2px solid $desc-blue;
+        background-color: $desc-blue;
+        top: -5px;
+        width: 10px;
+        height: 10px;
+        cursor: pointer;
+        transition: border-color 0.3s;
+        &:hover {
+            border-color: $desc-blue;
+        }
+        &:first-of-type {
+            &:after {
+                left: auto;
+                right: 0;
+            }
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            height: 2px;
+            top: 5px;
+            width: 7px;
+            background-color: #565656;
+            display: block;
+        }
+    }
+    &__block {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 100%;
+    }
+    &__title {
+        display: block;
+        width: 100%;
+        line-height: 25px;
+        font-size: 15px;
+        margin-bottom: 7px;
+    }
+    &__value {
+        display: flex;
+        justify-content: space-around;
+        width: 300px;
+        margin-top: 5px;
+    }
+    &__max {
+        line-height: 25px;
+        font-size: 14px;
+        color: $black;
+        font-weight: 700;
+        font-family: "OpenSans-Bold", sans-serif;
+    }
+    &__min {
+        line-height: 25px;
+        font-size: 14px;
+        color: $black;
+        font-weight: 700;
+        font-family: "OpenSans-Bold", sans-serif;
+    }
+}

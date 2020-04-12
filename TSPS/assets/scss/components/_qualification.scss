@@ -1,0 +1,134 @@
+.qualification {
+
+  &__wrap {
+    margin: 20px 0px;
+
+    &-block {
+      margin: 40px 0px;
+      display: flex;
+
+      &--image {
+        background-image: url('../images/certificate.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 350px;
+        height: 240px;
+      }
+      &--text {
+        margin: 0px 20px 0px 40px;
+        width: 240px;
+        & p {
+          font-size: 14px;
+          font-family: "OpenSans", sans-serif;
+          color: rgb(5, 8, 26);
+          line-height: 1.2;
+          text-align: left;
+
+          &:last-of-type {
+            margin-top: 15px;
+          }
+        }
+      }
+    }
+
+    &-text {
+
+      &--head {
+        color: $desc-blue;
+        font-size: 18px;
+        font-family: "OpenSans", sans-serif;
+        font-weight: 500;
+        line-height: 1.944;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+      }
+      &--image {
+        background-image: url('../images/arrowBlue-full.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 15px;
+        height: 15px;
+        display: block;
+        transform: rotate(180deg);
+      }
+      &--imageRotate {
+        background-image: url('../images/arrowBlue-full.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 15px;
+        height: 15px;
+        display: block;
+      }
+      &--hide {
+        display: none;
+      }
+      &--show {
+        display: block;
+        font-size: 14px;
+        font-family: "OpenSans", sans-serif;
+        color: $header-black;
+        line-height: 1.2;
+        text-align: left;
+        padding: 20px 0px;
+        border-bottom: 2px solid $desc-blue30;
+      }
+    }
+  }
+
+}
+
+.scale {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  &__item {
+
+    &-text {
+      font-size: 16px;
+      font-family: "OpenSans", sans-serif;
+      color: rgb(5, 8, 26);
+      line-height: 1.2;
+      text-align: left;
+    }
+    &-line {
+      width: 325px;
+      background-color: $desc-blue30;
+      height: 4px;
+
+      &--darkOne {
+        width: 135px;
+        background-color: $desc-blue;
+        height: 4px;
+        position: absolute;
+      }
+      &--darkTwo {
+        width: 290px;
+        background-color: $desc-blue;
+        height: 4px;
+        position: absolute;
+      }
+      &--darkThree {
+        width: 230px;
+        background-color: $desc-blue;
+        height: 4px;
+        position: absolute;
+      }
+      &--darkFour {
+        width: 318px;
+        background-color: $desc-blue;
+        height: 4px;
+        position: absolute;
+      }
+    }
+  }
+}
+
+.scale__lenght {
+  width: 100px;
+  height: 5px;
+  margin: 10px 1px;
+}

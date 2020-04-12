@@ -1,0 +1,60 @@
+.addition {
+  margin: 15px 0px 30px;
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0px;
+
+    &-item {
+      font-size: 13px;
+      font-family: "OpenSans", sans-serif;
+      font-weight: 400;
+      color: $header-black;
+      line-height: 1.2;
+      text-align: left;
+      margin: 5px 0px;
+    }
+    &-head{
+      font-size: 18px;
+      font-family: "OpenSans", sans-serif;
+      font-weight: 300;
+      color: $header-black;
+      line-height: 1.2;
+      text-align: left;
+    }
+    &-image {
+      background-image: url('../images/arrow-black.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      width: 12px;
+      height: 12px;
+      display: block;
+      margin: 0px 15px;
+
+      &--rotate {
+        background-image: url('../images/arrow-black.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 12px;
+        height: 12px;
+        display: block;
+        margin: 0px 15px;
+        transform: rotate(180deg);
+      }
+    }
+    &-wrap {
+      display: flex;
+      align-items: center;
+    }
+    &-hide {
+      display: none;
+    }
+  }
+  &__flex {
+    display: flex;
+    padding: 20px 0px;
+  }
+}

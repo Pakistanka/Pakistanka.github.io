@@ -1,0 +1,84 @@
+.teachers {
+
+  &__wrap {
+    display:flex;
+    justify-content: space-between;
+
+    &-item {
+
+    }
+    &-wrap {
+
+    }
+    &-image {
+      background-image: url('../images/teacher.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      width: 250px;
+      height: 167px;
+    }
+    &-block {
+
+      &--elem {
+        display: flex;
+        flex-direction: column;
+        line-height: 1;
+        padding: 5px 0px;
+      }
+      &--text {
+        font-size: 13px;
+        font-family: 'OpenSans', sans-serif;
+        font-weight: 400;
+        color: $nav-grey;
+      }
+      &--info {
+        font-size: 13px;
+        font-family: 'OpenSans-Bold', sans-serif;
+        font-weight: 700;
+        color: $black;
+      }
+      &--head {
+        font-size: 14px;
+        font-family: 'OpenSans-Bold', sans-serif;
+        font-weight: 700;
+        color: $black;
+      }
+    }
+  }
+
+  &__nav {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-text {
+      font-size: 15px;
+      font-family: "OpenSans", sans-serif;
+      color: $desc-blue;
+      line-height: 2.333;
+      text-align: left;
+      margin-left: 10px;
+    }
+    &-wrap {
+      display: flex;
+      width: 150px;
+      justify-content: space-between;
+      align-items: center;
+
+      &--long {
+        width: 100px;
+        height: 4px;
+        background-color: $nav-grey;
+        border-radius: 2px;
+      }
+      &--short {
+        border-radius: 50%;
+        height: 4px;
+        width: 4px;
+        background-color: $nav-grey;
+      }
+    }
+  }
+}

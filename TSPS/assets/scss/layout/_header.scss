@@ -1,0 +1,144 @@
+.header {
+  background-color: $header-black;
+
+  &_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 65px;
+  }
+  &_logo{
+    background-image: url('../images/logo.png');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 200px;
+    height: 50px;
+
+  }
+  &_info {
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 100%;
+    align-items: center;
+
+    &-address {
+      display: flex;
+      align-items: center;
+
+      &--link {
+        color: $white;
+        text-decoration:underline;
+        font-size: 16px;
+        font-family: 'OpenSans',sans-serif;
+      }
+      &--image {
+        background-image: url('../images/pin.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 12px;
+        height: 12px;
+      }
+    }
+    &-item {
+      display: flex;
+      flex-direction: column;
+      color: $white;
+    }
+    &-hours {
+      width: 190px;
+
+      &--position {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    &-button {
+      background-color: $blue;
+      color: $white;
+      font-size: 16px;
+      height: 42px;
+      font-family: 'OpenSans', sans-serif;
+      font-weight: 300;
+      font-style: normal;
+      border: inherit;
+      color: $white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &-check {
+      display: flex;
+      justify-content: space-around;
+      padding-top: 20px;
+
+
+      &--portal {
+        width: 210px;
+        border: 2px solid $blue;
+
+        &:hover {
+          background-color: $header-black;
+        }
+
+        & a {
+          color: $white;
+        }
+
+      }
+      &--register {
+        width: 140px;
+        border: 2px solid $blue;
+
+        &:hover {
+          background-color: $header-black;
+        }
+
+        & a {
+          color: $white;
+        }
+      }
+    }
+    &-search {
+      height: 42px;
+      display: flex;
+      align-items: center;
+
+      &--image {
+        background-image: url('../images/loupe.png');
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 25px;
+        height: 30px;
+      }
+    }
+    &-font {
+      font-size: 12px;
+      text-transform: lowercase;
+
+      &--small {
+        text-transform: lowercase;
+        font-size: 10px;
+      }
+    }
+  }
+}
+.line {
+  width: 35px;
+  height: 1px;
+  background-color: $white;
+  display: block;
+
+  &_wrapper {
+    display: flex;
+    align-items: center;
+  }
+  &-one {
+    margin-right: 10px;
+  }
+  &-two {
+    margin-left: 10px;
+    margin-right: 3px;
+  }
+}

@@ -1,0 +1,134 @@
+.menu {
+  background-color: $white;
+  display: flex;
+  justify-content: space-between;
+
+  &__item {
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'OpenSans-Bold', sans-serif;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: $blue;
+    padding: 0px 30px;
+
+    &-wrapper {
+      display: flex;
+      align-items: baseline;
+    }
+
+    &-arrow {
+      background-image: url('../images/arrow-blue.png');
+      width: 16px;
+      height: 7px;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      display: block;
+    }
+    &-whiteArrow {
+      background-image: url('../images/arrow-white.png');
+      width: 16px;
+      height: 7px;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      display: block;
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.js-hiddenMenu {
+  display: none;
+}
+
+.hiddenMenu {
+
+  display: flex;
+
+  &__list {
+    background-color: $blue;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    padding: 5px 0px;
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: space-around;
+      width: 100%;
+      padding-left: 30px;
+
+      &--link {
+        font-size: 13px;
+        font-family: "OpenSans", sans-serif;
+        font-weight: 400;
+        color: $white;
+
+
+        &:hover {
+          color: $white;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  &__showAll {
+    background-color: $dark-blue;
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-family: "OpenSans-Bold", sans-serif;
+    font-weight: 700;
+    width: 440px;
+  }
+}
+
+.lineHeight {
+  line-height: 1;
+  margin-bottom: -5px;
+}
+.show-menu {
+  display: flex;
+}
+.changeStyles {
+  color: white;
+  background-color: $blue;
+}
+
+.nav_folder{
+  display: flex;
+  width: inherit;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+  /* border-radius: 10px; */
+}
+
+.nav_folder:hover{
+  background-color: $desc-blue;
+  color: $white;
+}
+.nav_folder:hover .menu__item span {
+  color: $white;
+}
+
+.nav_folder_1,
+.nav_folder_2,
+.nav_folder_4
+{
+  z-index: -1;
+  opacity: 0;
+  display:none;
+}

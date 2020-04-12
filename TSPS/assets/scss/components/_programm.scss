@@ -1,0 +1,85 @@
+.programm {
+  margin: 60px 30px;
+
+  &__header {
+
+    border-bottom: 2px solid $desc-blue30;
+    display: flex;
+
+    &-title {
+      font-size: 25px;
+      font-family: 'OpenSans-Light', sans-serif;
+      font-weight: 300;
+      color: $grey-dots;
+      margin: 0px 30px;
+      cursor: pointer;
+      padding-bottom: 10px;
+
+      & a {
+        color: $grey-dots;
+
+        &:active {
+          color: $black;
+          font-weight: 500;
+          font-family: 'OpenSans', sans-serif;
+          padding-bottom: 10px;
+          border-bottom: 2px solid $desc-blue;
+        }
+        &:focus {
+          color: $black;
+          font-weight: 500;
+          font-family: 'OpenSans', sans-serif;
+          padding-bottom: 10px;
+          border-bottom: 2px solid $desc-blue;
+        }
+      }
+
+      &--active {
+        color: $black;
+        font-weight: 500;
+        font-family: 'OpenSans', sans-serif;
+        padding-bottom: 10px;
+        border-bottom: 2px solid $desc-blue;
+      }
+      &:first-of-type {
+        margin-left: 50px;
+      }
+    }
+  }
+
+  &__chat {
+    display: flex;
+    flex-direction: column;
+
+    &-item {
+      width: 700px;
+
+      &--number {
+        font-size: 50px;
+        font-family: "OpenSans", sans-serif;
+        color: $desc-blue;
+        font-weight: bold;
+        line-height: 1.2;
+        text-align: left;
+        position: relative;
+        bottom: -20px;
+      }
+      &--text{
+        font-size: 16px;
+        font-family: "OpenSans-Bold", sans-serif;
+        font-weight: 700;
+        color: $black;
+        background-color: $desc-blue30;
+        padding: 20px;
+      }
+      &--blue {
+        color: $blue;
+      }
+      &--right {
+        display: flex;
+        flex-direction: column;
+        align-self: flex-end;
+      }
+    }
+  }
+}

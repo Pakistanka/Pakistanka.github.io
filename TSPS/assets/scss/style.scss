@@ -1,0 +1,60 @@
+// Bootstrap
+@import "custom";
+@import "~bootstrap/scss/bootstrap";
+
+// Variables
+@import "helpers/vars";
+
+// Functions
+@import "helpers/functions";
+
+// Mixins
+@import "helpers/mixins";
+@import "helpers/_special-style";
+@import "helpers/reset";
+
+// Vendor
+@import "~@fancyapps/fancybox/dist/jquery.fancybox.css";
+@import "~select2/dist/css/select2";
+@import "~jquery-ui-slider/jquery-ui.min";
+@import "~jquery-ui/themes/base/all.css";
+@import "~jquery-ui/demos/demos.css";
+@import "~font-awesome/scss/font-awesome";
+
+// Fonts
+@import "base/fonts";
+
+//base
+@import "base/common";
+@import "base/opacity";
+
+//Components
+
+@import "components/menu";
+@import "components/description";
+@import "components/programm";
+@import "components/professions";
+@import "components/qualification";
+@import "components/timetable";
+@import "components/teachers";
+@import "components/advantages";
+@import "components/form";
+@import "components/addition";
+@import "components/tags";
+@import "components/filter";
+@import "components/list-of-course";
+@import "components/filter_slider";
+@import "components/select";
+@import "components/checkbox";
+@import "components/popup";
+
+//layout
+@import "layout/grid";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/margins";
+@import "layout/nav-header";
+@import "layout/nav-footer";
+
+//pages
+@import "pages/superfish";

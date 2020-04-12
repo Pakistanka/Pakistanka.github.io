@@ -1,0 +1,30 @@
+$baseFontSize: 17px;
+
+//colors
+$black: #000;
+$black50: rgba(0, 0, 0, .5);
+$white: #fff;
+$white10: rgba(255, 255, 255, .161);
+$header-black: #02040d;
+$footer-black: #282828;
+$blue: #114fdb;
+$dark-blue: #194ec5;
+$grey-dots: #dfdfdf;
+$grey-table: #e5e5e5;
+$grey-buttons: #f6f7f7;
+$nav-grey: #9a9b9e;
+$desc-blue: rgb(17, 79, 219);
+$desc-blue30: rgba(17, 79, 219, .3);
+$form-grey: #3d3e43;
+$footer-lightBlue: #1f2430;
+$footer-darkBlue: #070d1b;
+$tags: #c9d5f1;
+$filter-grey: #f7f7f7;
+
+
+//fonts
+$default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+$OpenSansBold: 'OpenSans-Bold', $default;
+$OpenSans: 'OpenSans', $default;
+$OpenSansLight: 'OpenSans-Light', $default;

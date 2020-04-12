@@ -1,0 +1,106 @@
+.filter {
+  width: 325px;
+
+  &__wrap {
+    width: 300px;
+    margin: 0 auto;
+    background-color: $filter-grey;
+
+    &-head {
+      font-size: 14px;
+      font-family: "OpenSans", sans-serif;
+      font-weight: 400;
+      color: $black;
+      line-height: 3.429;
+      text-align: left;
+      margin-left: 10px;
+    }
+    &-label {
+      display: flex;
+      border-bottom: 1px solid $desc-blue;
+      padding-bottom: 5px;
+
+      &--input {
+        color: $black;
+        background-color: $filter-grey;
+        border: none;
+        width: 270px;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      &--image {
+        background-image: url('../images/loupe-blue.png');
+        width: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:contain;
+        display: block;
+      }
+    }
+    &-select {
+      border: 1px solid $desc-blue;
+    }
+    &-block {
+      margin: 15px 0px;
+    }
+  }
+
+  &__button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px;
+
+    &-search {
+      width: 140px;
+      height: 40px;
+      background-color: $desc-blue;
+      color: $white;
+      border: 2px solid $desc-blue;
+
+      &:hover {
+        background: none;
+        color: $desc-blue;
+        border: 2px solid $desc-blue;
+      }
+    }
+
+    &-reset {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &--image {
+        background-image: url('../images/reset.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 12px;
+        height: 12px;
+        display: block;
+      }
+      &--text {
+        font-size: 14px;
+        font-family: "OpenSans", sans-serif;
+        color: $black;
+        line-height: 3.429;
+        text-align: left;
+        -moz-transform: matrix( 0.69999998807907,0,0,0.69999999999999,0,0);
+        -webkit-transform: matrix( 0.69999998807907,0,0,0.69999999999999,0,0);
+        -ms-transform: matrix( 0.69999998807907,0,0,0.69999999999999,0,0);
+      }
+    }
+  }
+}
+.upper__filter {
+  display: flex;
+  justify-content: flex-end;
+
+  &-item {
+    width: 300px;
+  }
+}

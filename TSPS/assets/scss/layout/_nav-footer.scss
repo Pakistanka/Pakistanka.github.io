@@ -1,0 +1,151 @@
+.footer {
+
+  &__upper {
+    background-color: $footer-lightBlue;
+    list-style: none;
+
+    &-wrapper {
+      width: 60%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    &-item {
+      color: $white;
+      font-size: 14px;
+      padding: 0px 10px;
+      display: flex;
+
+      &--main {
+        color: $white;
+        display: flex;
+        align-items: center;
+
+        &:hover {
+          color: $white;
+        }
+      }
+      &--active {
+        background-image: url('../images/arrow-left.png');
+        width: 12px;
+        height: 12px;
+        background-position: inherit;
+        display: block;
+        background-repeat: no-repeat;
+        transform: rotate(-90deg);
+      }
+    }
+    &-nav {
+      display: flex;
+      justify-content: flex-end;
+      padding: 20px 0px;
+    }
+  }
+}
+
+.footer__menu {
+  background-color: $footer-lightBlue;
+  display: flex;
+  justify-content: flex-end;
+
+  &-item {
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'OpenSans-Bold', sans-serif;
+    // width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: $white;
+    padding-left: 40px;
+
+    &--wrapper {
+      display: flex;
+      align-items: baseline;
+    }
+
+    &--arrow {
+      background-image: url('../images/arrow-white.png');
+      width: 16px;
+      height: 7px;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      display: block;
+    }
+  }
+}
+
+.footer__info {
+    display: flex;
+    justify-content: flex-end;
+    flex-basis: 100%;
+    align-items: center;
+    padding: 20px 0px;
+
+    &-address {
+      display: flex;
+      align-items: center;
+
+      &--link {
+        color: $white;
+        text-decoration:underline;
+        font-size: 16px;
+        font-family: 'OpenSans',sans-serif;
+      }
+      &--image {
+        background-image: url('../images/pin.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 12px;
+        height: 12px;
+      }
+      &:hover {
+        color: $white;
+      }
+    }
+    &-item {
+      display: flex;
+      flex-direction: column;
+      color: $white;
+      margin-left: 30px;
+    }
+    &-hours {
+      width: 190px;
+
+      &--position {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+    &-font {
+      font-size: 12px;
+      text-transform: lowercase;
+
+      &--small {
+        text-transform: lowercase;
+        font-size: 10px;
+      }
+    }
+  }
+
+.line {
+  width: 35px;
+  height: 1px;
+  background-color: $white;
+  display: block;
+
+  &_wrapper {
+    display: flex;
+    align-items: center;
+  }
+  &-one {
+    margin-right: 10px;
+  }
+  &-two {
+    margin-left: 10px;
+    margin-right: 3px;
+  }
+}

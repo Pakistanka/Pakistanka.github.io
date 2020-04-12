@@ -1,0 +1,30 @@
+.advantages {
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      margin: 20px;
+
+      &--head {
+        font-size: 25px;
+        font-family: "OpenSans-Bold",sans-serif;
+        font-weight: 700;
+        color: $black;
+        line-height: 1.2;
+        text-align: left;
+        padding-bottom: 10px;
+      }
+      &--text {
+        font-size: 13px;
+        font-family: "OpenSans", sans-serif;
+        color: $header-black;
+        line-height: 1.2;
+        text-align: left;
+      }
+    }
+  }
+}

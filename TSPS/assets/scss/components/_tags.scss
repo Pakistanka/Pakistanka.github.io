@@ -1,0 +1,51 @@
+.tags {
+  display: flex;
+  flex-direction: column;
+
+  &__head {
+    font-size: 30px;
+    font-family: "OpenSans-Light", sans-serif;
+    font-weight: 300;
+    color: $header-black;
+    line-height: 1.167;
+    text-align: left;
+  }
+  &__span {
+    font-size: 15px;
+    font-family: "OpenSans-Light", sans-serif;
+    font-weight: 300;
+    color: $header-black;
+    line-height: 1.2;
+    text-align: left;
+    margin-top: 5px;
+  }
+  &__nav {
+    display: flex;
+    margin-top: 10px;
+
+    &-elem {
+      font-size: 15px;
+      font-family: "OpenSans-Light", sans-serif;
+      font-weight: 300;
+      color: $header-black;
+      line-height: 2.333;
+      text-align: center;
+      background-color: $tags;
+      min-width: 115px;
+      border: inherit;
+      margin-right: 10px;
+      padding: 0px 10px;
+      border: 2px solid $tags;
+
+      &:hover {
+        color: $desc-blue;
+        background-color: $white;
+        border: 2px solid $desc-blue;
+      }
+    }
+  }
+}
+
+.tags__margin {
+  margin-bottom: 0px;
+}

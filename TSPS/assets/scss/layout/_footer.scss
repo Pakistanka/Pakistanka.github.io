@@ -1,0 +1,185 @@
+.footer {
+  padding: 30px 0px;
+
+  &__down {
+    background-color: $footer-darkBlue;
+    padding-bottom: 30px;
+
+    &-wrap {
+      display: flex;
+      flex-direction: column;
+    }
+    &-block {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 0px;
+      align-items: center;
+
+      &--image {
+        background-image: url('../images/footer-logo.png');
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 280px;
+        height: 50px;
+      }
+
+      &:first-of-type {
+        border-bottom: 1px solid $nav-grey;
+      }
+    }
+    &-menu {
+      display: flex;
+      justify-content: space-between;
+      margin: 0px 20px;
+
+      &--item {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 20px;
+
+        & span {
+          text-transform: uppercase;
+          text-decoration: underline;
+          font-size: 18px;
+          font-family: "OpenSans", sans-serif;
+          color: $white;
+          line-height: 1.944;
+          text-align: left;
+        }
+      }
+    }
+    &-media {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      &--subscribe {
+        border-bottom: 1px solid $white;
+
+        & input {
+          width: 225px;
+          border: inherit;
+          border-right: 1px solid $white;
+          border-bottom: 1px solid #fff;
+          outline: none;
+          background-color: $footer-darkBlue;
+          color: $white;
+
+          &:focus {
+            outline: none;
+          }
+        }
+        & button {
+          width: 115px;
+          color: $white;
+          background-color: $footer-darkBlue;
+          border: inherit;
+          height: 28px;
+          border-bottom: 1px solid #fff;
+          margin-left: -4px;
+        }
+      }
+      &--links {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 30px;
+        padding-top: 10px;
+      }
+    }
+    &-partners {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      &--image1 {
+        background-image: url('../images/pplogo.png');
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 210px;
+        height: 95px;
+      }
+      &--image2 {
+        background-image: url('../images/eagle.png');
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 230px;
+        height: 95px;
+      }
+      &--licence {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 95px;
+
+        & button {
+          height: 40px;
+          width: 240px;
+          border: 1px solid $white;
+          color: $white;
+          background-color: $footer-darkBlue;
+          font-size: 18px;
+          font-family: "OpenSans", sans-serif;
+          text-align: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        & span {
+          font-size: 14px;
+          font-family: "OpenSans-Light", sans-serif;
+          font-weight: 300;
+          color: $white;
+          line-height: 1.2;
+          text-align: center;
+        }
+      }
+    }
+    &-account {
+      display: flex;
+      flex-direction: column;
+      & span {
+        font-size: 14px;
+        font-family: "OpenSans-Light", sans-serif;
+        font-weight: 300px;
+        color: $white10;
+        line-height: 1.2;
+        text-align: right;
+      }
+    }
+  }
+}
+.social {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+  display: block;
+}
+.vk {
+  background-image: url('../images/vk.png');
+
+  &:hover {
+    background-image: url('../images/vk-blue.png');
+  }
+}
+.facebook {
+  background-image: url('../images/facebook.png');
+  &:hover {
+    background-image: url('../images/facebook-blue.png');
+  }
+}
+.instagram {
+  background-image: url('../images/instagram.png');
+  &:hover {
+    background-image: url('../images/instagram-blue.png');
+  }
+}
+.youtube {
+  background-image: url('../images/youtube.png');
+  &:hover {
+    background-image: url('../images/youtube-blue.png');
+  }
+}
