@@ -163,6 +163,7 @@ a {
     /* width: 100%; */
     align-items: center;
     justify-content: center;
+    border-left: 4px solid rgba(0, 0, 0, .2);
 }
 
 .skills__item:hover {
