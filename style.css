@@ -1,6 +1,5 @@
-/* apply a natural box layout model to all elements, but allowing components to change */
-
-html {
+html,
+body {
     box-sizing: border-box;
 }
 
@@ -11,7 +10,7 @@ html {
 }
 
 body {
-    background: #E6E4E7;
+    background: rgb(231, 228, 230);
     font-family: 'Arimo', sans-serif;
     color: #444;
 }
@@ -51,7 +50,7 @@ h1 {
 }
 
 h2 {
-    font-size: 28px;
+    font-size: 2em;
 }
 
 h3 {
@@ -82,12 +81,12 @@ a {
 .main {
     border-radius: 3px;
     background: white;
-    margin: 48px auto;
+    /* margin: 48px auto; */
     /* height:800px; */
-    width: 96%;
+    width: 100%;
     box-shadow: -2px 2px 2px 0px rgba(0, 0, 0, 0.1);
     transition: all 250ms ease-in-out;
-    transform: translate(0, 0) scale(.5);
+    /* transform: translate(0, 0) scale(.5); */
 }
 
 .main.in-focus {
@@ -103,7 +102,7 @@ a {
     border-top-right-radius: 3px;
     background: #201E21;
     background: linear-gradient(90deg, #232526 10%, #414345 90%);
-    padding: 88px 12px;
+    padding: 12px;
 }
 
 .resume__header h2,
@@ -113,25 +112,19 @@ a {
     color: white;
 }
 
-h2 {
-    font-size: 48px;
-    position: absolute;
-    top: 8px;
-}
-
 h2 span {
     font-weight: 100;
 }
 
 h3 {
-    position: absolute;
-    top: 70px;
+    /* position: absolute; */
+    /* top: 70px; */
     font-weight: 100;
     font-size: 20px;
 }
 
 h4 {
-    position: absolute;
+    /* position: absolute; */
     bottom: 14px;
     left: 12px;
     margin: 0;
@@ -142,40 +135,47 @@ a {
     font-size: 24px;
 }
 
-.resume__body {
+.resume__section {
+    border: 1px solid #999;
+    margin-bottom: 12px;
     padding: 12px;
 }
 
-.resume__section {
-    border: 1px solid #999;
-    margin-bottom: 24px;
-    padding: 24px;
-}
-
-.relative {
-    position: relative;
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .skills__item {
-    display: inline-block;
-    padding: 12px;
-    /* height:44px; */
-    width: 46%;
-    vertical-align: top;
+    padding: 6px;
     background: #444444;
     box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, .2);
     color: #FFFFFF;
-    margin-bottom: 24px;
-    margin-right: 3%;
     border-radius: 2px;
     cursor: pointer;
-    border-left: 4px solid #444444;
     transition: all 250ms ease-in-out;
+    margin-top: 12px 0 0 0;
+
+    display: flex;
+    flex-direction: column;
+    flex-basis: auto;
+    /* width: 100%; */
+    align-items: center;
 }
 
 .skills__item:hover {
     border-left: 4px solid #1FC1AD;
     transition: all 250ms ease-in-out;
+}
+
+.skills__image {
+    /* width: 100%; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 245px;
 }
 
 .heading--section {
