@@ -1,0 +1,325 @@
+form {
+    height: 100%;
+    width: 100%;
+}
+
+.coffee-title {
+    height: 3rem;
+    overflow: visible;
+    z-index: 20;
+}
+
+.coffee-info {
+    outline: none;
+    padding: 1rem;
+    transition: transform 0.5s $animation-easing;
+    &,
+    +.info-overlay {
+        display: block;
+        height: calc(#{$coffee-cup-height} + 2rem);
+        width: 100%;
+        position: absolute;
+        top: 35%;
+    }
+    +.info-overlay {
+        pointer-events: none;
+    }
+    &:focus {
+        transform: translateX($recipe-cup-offset);
+        .coffee-recipe {
+            opacity: 1;
+            transform: translateX(-$recipe-cup-offset);
+        }
+        +.info-overlay {
+            pointer-events: auto;
+        }
+    }
+}
+
+.coffee-cup {
+    width: $coffee-cup-height;
+    height: $coffee-cup-height;
+    border-style: solid;
+    border-color: $color-cup;
+    border-width: 0.5rem;
+    // border-top-width: 0;
+    margin: auto;
+    animation: cup-inactive 0.5s $animation-easing both;
+    transition: opacity 0.5s $animation-easing;
+    opacity: 0;
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        height: $coffee-cup-height / 3;
+        width: $coffee-cup-height / 4;
+        border-width: 0.6rem;
+        border-color: white;
+        border-style: solid;
+        left: 100%;
+        border-radius: 0 50% 50% 0;
+        top: $coffee-cup-height / 5;
+        transform: skewY(-15deg);
+        border-left-width: 0;
+    }
+    border-bottom-left-radius: $coffee-cup-width * .375;
+    border-bottom-right-radius: $coffee-cup-width * .375;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.coffee-ingredients {
+    position: absolute;
+    left: 0;
+    height: auto;
+    width: calc(100% - 1rem);
+    margin: 0.5rem;
+    bottom: 0;
+    overflow: hidden;
+    transition-duration: 1s;
+    transition-delay: 0.5s;
+    transition-timing-function: $animation-easing;
+    transition-property: opacity, transform;
+    transform: scaleY(0);
+    opacity: 0;
+    transform-origin: bottom;
+    border-bottom-left-radius: calc(#{$coffee-cup-width} * .375 - 1rem);
+    border-bottom-right-radius: calc(#{$coffee-cup-width} * .375 - 1rem);
+    border-left: 1px solid rgba($color-cup, 0.5);
+    border-right: 1px solid rgba($color-cup, 0.5);
+    background-color: rgba($color-cup, 0.5);
+}
+
+.coffee-recipe {
+    position: absolute;
+    left: 0;
+    bottom: 2rem;
+    height: auto;
+    width: 100%;
+    color: white;
+    padding: 0 calc(#{$recipe-cup-offset} - 1rem) 0 1rem;
+    opacity: 0;
+    transition-duration: 0.5s;
+    transition-property: transform, opacity;
+    transition-timing-function: $animation-easing;
+    transform: translateX($recipe-cup-offset);
+}
+
+[class^="recipe-"] {
+    white-space: nowrap;
+    overflow-x: hidden;
+    opacity: 0;
+    top: 0.5rem;
+    transition-property: height;
+    transition-delay: 1s;
+    &:not(.recipe-crema) {
+        min-height: 2.5rem;
+    }
+    &.recipe-crema {
+        overflow: hidden;
+    }
+    &:before {
+        position: absolute;
+        top: 1rem;
+        font-weight: 700;
+        font-size: small;
+        font-variant: small-caps;
+        line-height: 1.4;
+    }
+    &:after {
+        content: '';
+        display: inline-block;
+        border-bottom: 1px dotted $color-text-light;
+        width: 100%;
+        transform: scaleX(2);
+        transform-origin: left bottom;
+        margin: 0 0.5rem;
+    }
+}
+
+[class^="ingredient-"] {
+    width: 100%;
+    margin-bottom: 1px;
+    height: 0;
+    transition-property: height;
+    transition-delay: 1s;
+    &:after {
+        margin-top: 1rem;
+    }
+}
+
+@each $ingredient-key,
+$ingredient-info in $ingredients {
+    $ingredient-color: map-get($ingredient-info, 'color');
+    .ingredient-#{$ingredient-key} {
+        background-color: $ingredient-color;
+        color: $ingredient-color;
+    }
+}
+
+@for $ingredient-index from 1 through length($ingredients) {
+    [class^="ingredient-"]:nth-child(#{$ingredient-index}n) {
+        z-index: (length($ingredients) - $ingredient-index + 1) * 10;
+    }
+}
+
+.coffee-labels {
+    animation: coffee-labels-active 0.5s 0.5s $animation-easing both;
+    label {
+        display: block;
+        height: $coffee-type-height;
+        line-height: $coffee-type-height;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding: 0 1rem;
+        animation: coffee-type-active 1s $animation-easing both;
+        transition-property: opacity;
+        transition-duration: 0.5s;
+        transition-timing-function: $animation-easing;
+        transition-delay: 0.5s;
+        opacity: 1;
+        pointer-events: auto;
+        p {
+            font-family: 'Noto Serif', sans-serif;
+            font-style: italic;
+            transition: all 0.5s $animation-easing;
+            transition-property: transform, opacity;
+            transition-duration: 0.5s;
+            transition-timing-function: $animation-easing;
+            transition-delay: 0;
+            line-height: 1.4;
+            font-size: 1rem;
+            font-weight: normal;
+            color: $color-text-light;
+            opacity: 0;
+            text-transform: none;
+            transform: translateY(50%);
+        }
+        span {
+            display: inline-block;
+            font-size: 2rem;
+            color: $color-text-light;
+            &:after {
+                content: '';
+                position: absolute;
+                display: block;
+                top: 100%;
+                left: calc(50% - #{$rule-width / 2});
+                width: $rule-width;
+                height: 1px;
+                background: $color-accent;
+                opacity: 0;
+            }
+        }
+    }
+}
+
+[name="coffeeType"]:checked {
+    ~.coffee-info {
+        [class^="ingredient-"],
+        [class^="recipe-"] {
+            transition-delay: 0;
+            display: none;
+        }
+        .coffee-cup {
+            opacity: 1;
+        }
+    }
+    ~.coffee-title label {
+        animation: coffee-type-inactive 1s $animation-easing both;
+        transition-delay: 0s;
+        opacity: 0;
+        pointer-events: none;
+    }
+    ~.coffee-controls {
+        transition-delay: 0.5s;
+        transform: translateY(0);
+        opacity: 1;
+        [type="reset"] {
+            opacity: 1;
+        }
+    }
+}
+
+@each $coffee-type,
+$coffee-recipe in $coffee-types {
+    ##{$coffee-type}:checked {
+        ~.coffee-title label {
+            &[for="#{$coffee-type}"] {
+                animation: none;
+                opacity: 1;
+                p {
+                    opacity: 1;
+                    transform: translateY(0);
+                    transition-delay: 0.5s;
+                }
+                span:after {
+                    animation: coffee-rule-active 1s 0.5s $animation-easing both;
+                }
+            }
+        }
+        ~.coffee-info {
+            .coffee-cup {
+                animation: cup-active 2s $animation-easing;
+            }
+            .coffee-ingredients {
+                animation: ingredients-active 2s $animation-easing;
+                transform: scaleY(1);
+                opacity: 1;
+            }
+            @each $ingredient,
+            $amount in $coffee-recipe {
+                .ingredient-#{$ingredient},
+                .recipe-#{$ingredient} {
+                    display: block;
+                    height: calc(1/6.3 * (#{$coffee-cup-height} - 2rem) * #{$amount});
+                }
+                .recipe-#{$ingredient} {
+                    transition-delay: 0;
+                    transition-duration: 0.5s;
+                    transition-timing-function: $animation-easing;
+                    transition-property: opacity;
+                    opacity: 1;
+                    &:before {
+                        content: '#{$amount * 30}ml';
+                    }
+                }
+            }
+        }
+    }
+}
+
+.coffee-steam {
+    position: absolute;
+    height: 10rem;
+    width: 100%;
+    bottom: 100%;
+    left: 0;
+}
+
+.steam {
+    width: 1rem;
+    height: 1rem;
+    color: rgba($color-text-light, 0.3);
+    position: absolute;
+    bottom: 0;
+    animation: steam-active 3s ease-out infinite;
+    filter: blur(0.5rem);
+    @for $index from 1 through 3 {
+        &:nth-child(#{$index}n) {
+            left: calc(50% - #{($index - 2) * 1.5rem});
+        }
+    }
+    &:before {
+        content: "~";
+        transform: rotate(90deg) scaleX(15) scaleY(10);
+        display: block;
+    }
+    &.large {
+        animation-delay: 0.5s;
+        &:before {
+            transform: rotate(90deg) scaleX(20) scaleY(15);
+        }
+    }
+}

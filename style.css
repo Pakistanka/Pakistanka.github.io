@@ -162,6 +162,7 @@ a {
     flex-basis: auto;
     /* width: 100%; */
     align-items: center;
+    justify-content: center;
 }
 
 .skills__item:hover {
@@ -182,4 +183,8 @@ a {
     background: #f1f1f1;
     border-left: 6px solid #1FC1AD;
     padding: 6px;
+}
+
+figcaption {
+    margin-top: 15px;
 }
